@@ -72,8 +72,8 @@ var setSpeed = function(name, motor, speed) {
 };
 
 
-init("droite", {1:5,2:6,3:13,4:19}, {1: 0 2: 1});
-init("gauche", {1:26,2:12,3:16,4:20}, {1: 2 2: 3});
+init("droite", {1:5,2:6,3:13,4:19}, {1: 0, 2: 1});
+init("gauche", {1:26,2:12,3:16,4:20}, {1: 2, 2: 3});
 
 var sens = 1;
 setTimeout(function(){
