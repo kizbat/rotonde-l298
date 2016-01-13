@@ -24,6 +24,7 @@ var init = function(name, pins, pwm, callback) {
     devices[name] = {pins: pins, pwm: pwm};
     //open GPIO
 	async.forEachOf(pins, function (value, key, callback) {
+		console.log("open pin :", value, "for motor:"+name+key);
 		gpio.open(value, "output", callback);
 	}, callback);
 };
